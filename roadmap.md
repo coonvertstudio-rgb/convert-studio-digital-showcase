@@ -6,3 +6,4 @@
 - [x] Validar layout em 1440, 768, 390 e 360 px, FAQ e WhatsApp.
 - [x] Substituir textos institucionais (hero, soluções, contato e metas) e concluir verificação final.
 - [x] Ocultar preços iniciais de Essencial e Identidade na apresentação comercial, preservando R$20/mês, +R$100 e os botões de WhatsApp.
+- [x] Trocar "Pagamento único" por "Escopo e preço final definidos antes da contratação." no Essencial, sem repetir no rodapé do card.

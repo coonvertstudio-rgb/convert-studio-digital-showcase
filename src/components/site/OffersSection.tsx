@@ -23,7 +23,7 @@ export function OffersSection({ whatsapp }: { whatsapp: string }) {
         <div className="min-w-0 lg:col-start-1 lg:row-start-1">
           <h3 className="font-display text-2xl font-semibold">Pacote Essencial</h3>
           <p className="mt-3 text-sm font-medium text-primary">{essentialCall}</p>
-          <p className="mt-1 text-xs font-medium text-card-muted">Pagamento único</p>
+          <p className="mt-1 text-xs font-medium text-card-muted">Escopo e preço final definidos antes da contratação.</p>
           <p className="mt-4 text-sm leading-relaxed">Seu negócio bem apresentado, com serviços, trabalhos e solicitações organizados em um só lugar.</p>
         </div>
         <div className="min-w-0 lg:col-start-2 lg:row-span-2 lg:row-start-1">
@@ -36,7 +36,7 @@ export function OffersSection({ whatsapp }: { whatsapp: string }) {
         <div className="min-w-0 lg:col-start-1 lg:row-start-2">
           <ContactButton destination={whatsapp} message="Olá! Tenho interesse no Pacote Essencial e quero conversar sobre meu site.">Quero meu site</ContactButton>
         </div>
-        <p className="text-xs leading-relaxed text-card-muted lg:col-span-2 lg:row-start-4">O estabelecimento confirma os pedidos pelo WhatsApp. Escopo e preço final definidos antes da contratação. As duas rodadas de ajustes devem ser consolidadas e realizadas dentro do escopo aprovado.</p>
+        <p className="text-xs leading-relaxed text-card-muted lg:col-span-2 lg:row-start-4">O estabelecimento confirma os pedidos pelo WhatsApp. As duas rodadas de ajustes devem ser consolidadas e realizadas dentro do escopo aprovado.</p>
       </div>
 
       <div className="border-t border-card-border bg-card-body p-5 sm:p-8">
