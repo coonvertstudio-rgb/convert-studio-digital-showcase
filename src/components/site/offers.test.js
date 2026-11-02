@@ -1,9 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { offerWhatsApp, terms } from "./offers";
+import { essentialCall, offerWhatsApp, terms } from "./offers";
 
 describe("Termos comerciais aprovados", () => {
-  test("Essencial começa em R$300", () => expect(terms.essentialFrom).toBe(300));
-  test("Identidade visual começa em R$300", () => expect(terms.brandFrom).toBe(300));
+  test("Essencial não exibe preço inicial", () => expect("essentialFrom" in terms).toBe(false));
+  test("Identidade visual não exibe preço inicial", () => expect("brandFrom" in terms).toBe(false));
+  test("Essencial usa chamada discreta", () => expect(essentialCall).toBe("Site personalizado para o seu negócio"));
   test("Domínio próprio adicional R$100", () => expect(terms.ownDomain).toBe(100));
   test("Atualizações custam R$20 mensais", () => expect(terms.updatesMonthly).toBe(20));
   test("Hospedagem incluída por 12 meses", () => expect(terms.hostingMonths).toBe(12));

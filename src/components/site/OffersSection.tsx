@@ -1,7 +1,7 @@
 import { Check, Globe, MessageCircle, Palette, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { brandBenefits, essentialBenefits, faq, offerWhatsApp, terms } from "./offers";
+import { brandBenefits, essentialBenefits, essentialCall, faq, offerWhatsApp, terms } from "./offers";
 
 function Benefits({ items }: { items: string[] }) {
   return <ul className="grid gap-2.5">{items.map(item => <li key={item} className="flex items-start gap-2.5 text-sm leading-relaxed"><Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" /><span>{item}</span></li>)}</ul>;
@@ -22,7 +22,7 @@ export function OffersSection({ whatsapp }: { whatsapp: string }) {
       <div className="grid gap-5 p-5 sm:p-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-x-10">
         <div className="min-w-0 lg:col-start-1 lg:row-start-1">
           <h3 className="font-display text-2xl font-semibold">Pacote Essencial</h3>
-          <p className="mt-3 font-display text-3xl font-semibold text-primary">A partir de R${terms.essentialFrom}</p>
+          <p className="mt-3 text-sm font-medium text-primary">{essentialCall}</p>
           <p className="mt-1 text-xs font-medium text-card-muted">Pagamento único</p>
           <p className="mt-4 text-sm leading-relaxed">Seu negócio bem apresentado, com serviços, trabalhos e solicitações organizados em um só lugar.</p>
         </div>
@@ -53,7 +53,6 @@ export function OffersSection({ whatsapp }: { whatsapp: string }) {
       <article className="flex flex-col rounded-2xl border border-card-border bg-card p-5 text-card-foreground shadow-soft sm:p-6">
         <Palette className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
         <h3 className="font-display text-lg font-semibold">Logo e Identidade Visual Básica</h3>
-        <p className="mt-2 font-display text-xl font-semibold text-primary">A partir de R${terms.brandFrom}</p>
         <p className="mb-5 mt-3 text-sm leading-relaxed text-card-muted">Uma identidade visual consistente para apresentar seu negócio com personalidade.</p>
         <Benefits items={brandBenefits} />
         <p className="mb-5 mt-4 text-xs leading-relaxed text-card-muted">Materiais para Instagram e aplicações adicionais sob orçamento.</p>

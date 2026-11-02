@@ -1,6 +1,6 @@
+export const essentialCall = "Site personalizado para o seu negócio";
+
 export const terms = {
-  essentialFrom: 300,
-  brandFrom: 300,
   ownDomain: 100,
   updatesMonthly: 20,
   hostingMonths: 12,
